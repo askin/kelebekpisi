@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>kurtcuk</Name>
+    <Homepage>
+		http://forum.pardus-linux.org	
+    </Homepage>
+    <Packager>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Packager>
+    <License>GPLv2</License>
+    <IsA>app:console</IsA>
+    <PartOf>none</PartOf>
+    <Summary>
+		A Simple Calculator.
+	</Summary>
+    <Description>
+		A Simple Calculator.
+	</Description>
+    <Archive type="targz" sha1sum="c1f10789208615183b1b4a52b19036c159fef7de">
+		http://forum.pardus-linux.org/download/file.php?id=449
+    </Archive>
+  </Source>
+  <Package>
+    <Name>kurtcuk</Name>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+    </Files>
+  </Package>
+  <History>
+    <Update release="1">
+      <Date>2009-07-30</Date>
+      <Version>0.6</Version>
+      <Comment>Firts Release</Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+  </History>
+</PISI>

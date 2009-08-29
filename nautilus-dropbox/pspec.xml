@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>nautilus-dropbox</Name>
+    <Homepage>http://www.getdropbox.com</Homepage>
+    <Packager>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Packager>
+    <License>GPL</License>
+    <IsA>app:gui</IsA>
+    <PartOf>applications.office</PartOf>
+    <Summary>Linux client for dropbox</Summary>
+    <Description>A linux client for dropbox, dropbox a service to sync your files and across computers.</Description>
+    <Archive type="tarbz2" sha1sum="c22c91a368fc03daac44db95d43fb9aa6ff0a92a">
+      http://www.getdropbox.com/download?dl=packages/nautilus-dropbox-0.6.1.tar.bz2
+    </Archive>
+    <BuildDependencies>
+      <Dependency>gtk2</Dependency>
+      <Dependency>libnotify</Dependency>
+      <Dependency>docutils</Dependency>
+	  <Dependency>nautilus</Dependency>
+    </BuildDependencies>
+  </Source>
+  <Package>
+    <Name>nautilus-dropbox</Name>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="data">/usr/share</Path>
+      <Path fileType="config">/etc</Path>
+      <Path fileType="man">/usr/man</Path>
+	  <Path fileType="library">/usr/lib</Path>
+    </Files>
+	<RuntimeDependencies>
+	  <Dependency>gtk2</Dependency>
+      <Dependency>libnotify</Dependency>
+      <Dependency>docutils</Dependency>
+	  <Dependency>nautilus</Dependency>
+    </RuntimeDependencies>
+  </Package>
+  <History>
+  	<Update release="3">
+      <Date>2009-07-26</Date>
+      <Version>0.6.1</Version>
+      <Comment>
+	  	- add translations.xml file
+		- checked for pardus 2009
+		- /usr/lib added
+	  </Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+    <Update release="2">
+      <Date>2009-07-01</Date>
+      <Version>0.6.1</Version>
+      <Comment>
+	  	- pspec.xml file edit
+		- dependencies were corrected
+	  </Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+    <Update release="1">
+      <Date>2009-05-10</Date>
+      <Version>0.6.1</Version>
+      <Comment>Firts Release</Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+  </History>
+</PISI>
+

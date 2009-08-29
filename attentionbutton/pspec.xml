@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>attentionbutton</Name>
+    <Homepage>
+      http://code.google.com/p/pidgin-attentionbutton/
+    </Homepage>
+    <Packager>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Packager>
+    <License>GPL</License>
+    <IsA>library</IsA>
+    <PartOf>none</PartOf>
+    <Summary>
+      Pidgin attentionbutton plugin.
+    </Summary>
+    <Description>
+      Attention Button is a plugin for Pidgin that adds a button in the conversation window to easly Nudge/Buzz/Zap your friends. 
+    </Description>
+    <Archive type="targz" sha1sum="290a62fc930f8d25e924b43ad87fce8623c0cb22">
+      http://pidgin-attentionbutton.googlecode.com/files/attentionbutton-0.3.tar.gz
+    </Archive>
+    <BuildDependencies>
+      <Dependency>
+		pidgin
+      </Dependency>
+    </BuildDependencies>
+  </Source>
+  
+  <Package>
+    <Name>attentionbutton</Name>
+	<RuntimeDependencies>
+      <Dependency>
+		pidgin
+      </Dependency>
+    </RuntimeDependencies>
+    <Files>
+      <Path fileType="library">/usr/lib/purple-2</Path>
+    </Files>
+  </Package>
+  <History>
+    <Update release="2">
+      <Date>2009-07-30</Date>
+      <Version>0.3</Version>
+      <Comment>Runtime dependencies is moved under Package from Source</Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+	
+    <Update release="1">
+      <Date>2009-06-20</Date>
+      <Version>0.3</Version>
+      <Comment>Firts Release</Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+  </History>
+</PISI>

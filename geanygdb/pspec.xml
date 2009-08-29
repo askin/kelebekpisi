@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>geanygdb</Name>
+    <Homepage>http://plugins.geany.org/geanygdb</Homepage>
+    <Packager>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Packager>
+    <License>GPL</License>
+    <IsA>library</IsA>
+    <PartOf>none</PartOf>
+    <Summary>
+      Geany Gnu Debugger plugin
+    </Summary>
+    <Description>
+      This is a plugin to provide integrated debugging from Geany using the GNU debugger (gdb).
+    </Description>
+    <Archive type="targz" sha1sum="455b7ba509eeba925cb8cfa7ef3643222cab7091">
+      http://plugins.geany.org/geanygdb/geanygdb-0.0.2.tar.gz
+    </Archive>
+    <BuildDependencies>
+      <Dependency>
+		geany
+      </Dependency>
+    </BuildDependencies>
+  </Source>
+  <Package>
+    <Name>geanygdb</Name>
+	<RuntimeDependencies>
+      <Dependency>
+		geany
+      </Dependency>
+    </RuntimeDependencies>
+    <Files>
+	  <Path fileType="bin">/usr/bin</Path>
+      <Path fileType="library">/usr/lib/geany</Path>
+	  <Path fileType="doc">/usr/share/doc</Path>
+	  <Path fileType="localedata">/usr/share/locale</Path>
+    </Files>
+  </Package>
+  <History>
+    <Update release="2">
+      <Date>2009-07-31</Date>
+      <Version>0.0.2</Version>
+      <Comment>
+	  	* translations.xml added
+		* Dependencies are checked
+		* added filetype
+	  </Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+    <Update release="1">
+      <Date>2009-06-20</Date>
+      <Version>0.0.2</Version>
+      <Comment>Firts Release</Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+  </History>
+</PISI>

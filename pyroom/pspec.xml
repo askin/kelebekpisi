@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+	<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+	<Source>
+		<Name>pyroom</Name>
+		<Homepage>
+			http://pyroom.org/
+		</Homepage>
+		<Packager>
+			<Name>Aşkın Yollu</Name>
+			<Email>askin@askin.ws</Email>
+		</Packager>
+		<License>GPLv3</License>
+		<IsA>app:gui</IsA>
+		<PartOf>none</PartOf>
+		<Summary>
+			PyRoom is a free editor that stays out your way - and keeps other things out of your way, too.		
+		</Summary>
+		<Description>
+			PyRoom is a free editor that stays out your way - and keeps other things out of your way, too. As a fullscreen editor without buttons, widgets, formatting options, menus and with only the minimum of required dialog windows, it doesn't have any distractions and lets you focus on writing and only writing. It is distributed under the GNU General Public Licence v3.
+		</Description>
+		<Archive type="targz" sha1sum="b138eaaeaf82d2fd99cd1f5b754a0901a5d8c4ca">
+			http://launchpad.net/pyroom/0.4/0.4.1/+download/pyroom-0.4.1.tar.gz
+		</Archive>
+		<BuildDependencies>
+			<Dependency>pygtk</Dependency>
+			<Dependency>pyxdg</Dependency>
+			<Dependency>gconf</Dependency>
+		</BuildDependencies>
+	</Source>
+	<Package>
+		<Name>pyroom</Name>
+		<RuntimeDependencies>
+			<Dependency>pygtk</Dependency>
+			<Dependency>pyxdg</Dependency>
+			<Dependency>gconf</Dependency>
+		</RuntimeDependencies>
+		<Files>
+			<Path fileType="executable">/usr/bin</Path>
+			<Path fileType="library">/usr/lib</Path>
+			<Path fileType="data">/usr/share</Path>
+		</Files>
+	</Package>
+	<History>
+		<Update release="2">
+			<Date>2009-07-31</Date>
+			<Version>0.4.1</Version>
+			<Comment>
+				* Dependencies are checked
+				* translations.xml is added
+			</Comment>
+			<Name>Aşkın Yollu</Name>
+			<Email>askin@askin.ws</Email>
+		</Update>
+		<Update release="1">
+			<Date>2009-07-26</Date>
+			<Version>0.4.1</Version>
+			<Comment>Firts Release</Comment>
+			<Name>Aşkın Yollu</Name>
+			<Email>askin@askin.ws</Email>
+		</Update>
+	</History>
+</PISI>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>attentionbutton</Name>
+        <Summary xml:lang="tr">Pidgin titreşim eklentisi.</Summary>
+		<Description xml:lang="tr">Pidgin kullanırken, karşı tarafa titreşim yollamak amacıyla kullanılan bir eklenti.</Description>
+    </Source>
+</PISI>

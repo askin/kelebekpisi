@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>gpass</Name>
+    <Homepage>http://projects.netlab.jp/gpass/</Homepage>
+    <Packager>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Packager>
+    <License>GPL</License>
+    <IsA>app:gui</IsA>
+    <PartOf>applications.office</PartOf>
+    <Summary>GPass is the password manegement software for GNOME2 desktop.</Summary>
+    <Description>Password manager for Gnome</Description>
+    <Archive type="targz" sha1sum="c8804e6086a947fc1f155e47f78d730ad92b5756">
+      http://projects.netlab.jp/gpass/release/gpass-0.5.1.tar.gz
+    </Archive>
+    <BuildDependencies>
+      <Dependency>mhash</Dependency>
+      <Dependency>gtk2</Dependency>
+      <Dependency>libmcrypt</Dependency>
+    </BuildDependencies>
+  </Source>
+  <Package>
+    <Name>gpass</Name>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="data">/usr/share</Path>
+      <Path fileType="config">/etc</Path>
+      <Path fileType="man">/usr/man</Path>
+    </Files>
+	<RuntimeDependencies>
+      <Dependency>mhash</Dependency>
+      <Dependency>gtk2</Dependency>
+      <Dependency>libmcrypt</Dependency>
+    </RuntimeDependencies>
+  </Package>
+  <History>
+  	<Update release="2">
+      <Date>2009-07-26</Date>
+      <Version>0.5.1</Version>
+      <Comment>
+	  	translations.xml file created
+		checked for 2009
+	  </Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+    <Update release="1">
+      <Date>2009-05-10</Date>
+      <Version>0.5.1</Version>
+      <Comment>Firts Release</Comment>
+      <Name>Aşkın Yollu</Name>
+      <Email>askin@askin.ws</Email>
+    </Update>
+  </History>
+</PISI>
+

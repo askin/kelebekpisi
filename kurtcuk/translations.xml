@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>kurtcuk</Name>
+        <Summary xml:lang="tr">Basit bir hesap makinesi.</Summary>
+		<Description xml:lang="tr">Python ile yazılmış basit bir hesap makinesi.</Description>
+    </Source>
+</PISI>

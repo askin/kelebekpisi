@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>nautilus-dropbox</Name>
+		<Summary xml:lang="tr">Dropbox için linux istemcisi.</Summary>
+		<Description xml:lang="tr">Dropbox için bir linux istemcisi. Dropbox dosyalarınızı senkronize etmeye ve bilgisayarlar arasında paylaşmaya yarayan bir servistir.</Description>
+    </Source>
+</PISI>

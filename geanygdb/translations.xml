@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+	<Source>
+		<Name>geanygdb</Name>
+		<Summary xml:lang="tr">Geany GNU hata ayıklayıcı eklentisi.</Summary>
+		<Description xml:lang="tr">Geany ile kod yazarken kullanılabilecek, GNU hata ayıklayıcı eklentisi.</Description>
+	</Source>
+</PISI>

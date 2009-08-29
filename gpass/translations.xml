@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gpass</Name>
+        <Summary xml:lang="tr">GPass Gnome2 masaüstü ortamı için şifre yöneticisidir.</Summary>
+		<Description xml:lang="tr">Gnome için şifre yöneticisi</Description>
+    </Source>
+</PISI>
