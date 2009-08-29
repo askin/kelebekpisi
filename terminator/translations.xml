@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>terminator</Name>
-        <Summary xml:lang="tr">Terminator, bir pencere içinde birden fazla terminal.</Summary>
-		<Description xml:lang="tr">Terminator, bir pencerede birden fazla terminal çalıştımaya yarayan basit bir uygulamadır. Pencereyi yatay ve dikey olarak istediğimiz kadar bölebiliriz.</Description>
-    </Source>
-</PISI>
