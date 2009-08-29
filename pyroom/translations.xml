@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-	<Source>
-		<Name>pyroom</Name>
-		<Summary xml:lang="tr">Python karanlık oda.</Summary>
-		<Description xml:lang="tr">Python ile yazılmış, yazma sırasında ilgiyi yazı üzerinde toplamak için tasarlanmış bir metin düzenleyici.</Description>
-	</Source>
-</PISI>
