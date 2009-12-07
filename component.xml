@@ -1,0 +1,10 @@
+<PISI>
+    <Name>playground.askin</Name>
+    <LocalName xml:lang="en">Askin's playground.</LocalName>
+    <Summary>Playing ground for askin.yollu</Summary>
+    <Description>Come in</Description>
+    <Packager>
+        <Name>Aşkın Yollu</Name>
+        <Email>askin@askin.ws</Email>
+    </Packager>
+</PISI>
