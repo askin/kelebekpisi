@@ -200,16 +200,22 @@ def setWpaEnterpriseAuthentication(ifname, ssid, params, timeout = TIMEOUT):
     iface = getWpaInterface(ifname)
     network = iface.addNetwork()
 
-    network.setNetwork({
-        "ssid": dbus.String(ssid, variant_level=1),
-        "key_mgmt": dbus.String(params["key_mgmt"], variant_level=1),
-        "pairwise": dbus.String(params["pairwise"], variant_level=1),
-        "group":    dbus.String(params["group"], variant_level=1),
-        "eap":      dbus.String(params["eap"], variant_level=1),
-        "phase2":   dbus.String(params["phase2"], variant_level=1),
-        "anonymous_identity": dbus.String(params["anonymous_identity"], variant_level=1),
-        "identity": dbus.String(params["identity"], variant_level=1),
-        "password": dbus.String(params["password"], variant_level=1)})
+    # debug
+    fn = open("/tmp/wpa.log", "w")
+
+    # Create new dict
+    parameters = {"ssid": dbus.String(ssid, variant_level=1)}
+    for i in params:
+        if(params[i] != ""):
+            parameters[i] = dbus.String(params[i], variant_level=1)
+
+    for i in parameters:
+        fn.writelines("%s %s\n" % (i, parameters[i]))
+
+    fn.close()
+
+    network.setNetwork(parameters)
+
     iface.selectNetwork(network.path)
     authentication = waitForAuthenticationComplete(iface, timeout)
     if not authentication:
