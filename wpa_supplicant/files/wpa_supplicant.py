@@ -200,19 +200,11 @@ def setWpaEnterpriseAuthentication(ifname, ssid, params, timeout = TIMEOUT):
     iface = getWpaInterface(ifname)
     network = iface.addNetwork()
 
-    # debug
-    fn = open("/tmp/wpa.log", "w")
-
     # Create new dict
     parameters = {"ssid": dbus.String(ssid, variant_level=1)}
     for i in params:
         if(params[i] != ""):
             parameters[i] = dbus.String(params[i], variant_level=1)
-
-    for i in parameters:
-        fn.writelines("%s %s\n" % (i, parameters[i]))
-
-    fn.close()
 
     network.setNetwork(parameters)
 
