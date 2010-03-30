@@ -1,0 +1,57 @@
+--- /dev/null	2006-11-09 11:11:04.223642789 +0200
++++ xdebug.ini	2006-11-09 14:19:21.550364165 +0200
+@@ -0,0 +1,54 @@
++zend_extension = "EXTENSION_PATH"
++
++xdebug.auto_trace = Off
++xdebug.trace_output_dir = "/tmp"
++xdebug.trace_output_name = "crc32"
++xdebug.trace_format = 0
++xdebug.trace_options = 0
++
++xdebug.collect_includes = On
++xdebug.collect_params = Off
++xdebug.collect_return = Off
++xdebug.collect_vars = Off
++
++xdebug.default_enable = On
++xdebug.extended_info = On
++xdebug.manual_url = "http://www.php.net"
++xdebug.max_nesting_level = 100
++
++xdebug.show_exception_trace = Off
++xdebug.show_local_vars = Off
++xdebug.show_mem_delta = Off
++
++xdebug.dump.COOKIE = "NULL"
++xdebug.dump.ENV = "NULL"
++xdebug.dump.FILES = "NULL"
++xdebug.dump.GET = "NULL"
++xdebug.dump.POST = "NULL"
++xdebug.dump.REQUEST = "NULL"
++xdebug.dump.SERVER = "NULL"
++xdebug.dump.SESSION = "NULL"
++xdebug.dump_globals = On
++xdebug.dump_once = On
++xdebug.dump_undefined = Off
++
++xdebug.profiler_enable = Off
++xdebug.profiler_output_dir = "/tmp"
++xdebug.profiler_output_name = "crc32"
++xdebug.profiler_enable_trigger = Off
++xdebug.profiler_append = Off
++xdebug.profiler_aggregate = Off
++
++xdebug.remote_enable = Off
++xdebug.remote_handler = "dbgp"
++xdebug.remote_host = "localhost"
++xdebug.remote_mode = "req"
++xdebug.remote_port = "9000"
++xdebug.remote_autostart = Off
++xdebug.remote_log = ""
++
++xdebug.allowed_clients = ""
++xdebug.idekey = ""
++xdebug.var_display_max_data = 512
++xdebug.var_display_max_depth = 2
++

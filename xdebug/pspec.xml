@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xdebug</Name>
+        <Homepage>http://www.xdebug.org</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>Xdebug</License>
+        <IsA>library</IsA>
+        <Summary>A PHP debugging and profiling extension</Summary>
+        <Description>The Xdebug extension helps you debugging your script by providing a lot of valuable debug information.</Description>
+        <Archive sha1sum="77e6a8fd56641d8b37be68ea3c4a5c52b7511114" type="targz">http://xdebug.org/files/xdebug-2.0.5.tgz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.2.0">mod_php</Dependency>
+            <Dependency versionFrom="5.2.0">php-cli</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>xdebug-default-config.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>xdebug</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.2.0">mod_php</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/php</Path>
+            <Path fileType="library">/usr/lib/php</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2010-03-17</Date>
+            <Version>2.0.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+        <Update release="2">
+            <Date>2007-04-16</Date>
+            <Version>2.0.0_rc3</Version>
+            <Comment>Version bump and add php-cli dependency</Comment>
+            <Name>Fatih Aşıcı</Name>
+            <Email>fatih.asici@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2006-11-09</Date>
+            <Version>2.0.0_rc1</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Aşıcı</Name>
+            <Email>fatih.asici@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
