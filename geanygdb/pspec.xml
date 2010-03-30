@@ -34,30 +34,38 @@
       </Dependency>
     </RuntimeDependencies>
     <Files>
-	  <Path fileType="bin">/usr/bin</Path>
-      <Path fileType="library">/usr/lib/geany</Path>
-	  <Path fileType="doc">/usr/share/doc</Path>
-	  <Path fileType="localedata">/usr/share/locale</Path>
+        <Path fileType="bin">/usr/bin</Path>
+        <Path fileType="library">/usr/lib/geany</Path>
+        <Path fileType="doc">/usr/share/doc</Path>
+        <Path fileType="localedata">/usr/share/locale</Path>
     </Files>
   </Package>
+
   <History>
-    <Update release="2">
-      <Date>2009-07-31</Date>
-      <Version>0.0.2</Version>
-      <Comment>
-	  	* translations.xml added
-		* Dependencies are checked
-		* added filetype
+      <Update release="3">
+          <Date>2010-02-01</Date>
+          <Version>0.0.2</Version>
+          <Comment>Firts Release</Comment>
+          <Name>Aşkın Yollu</Name>
+          <Email>askin@askin.ws</Email>
+      </Update>
+      <Update release="2">
+          <Date>2009-07-31</Date>
+          <Version>0.0.2</Version>
+          <Comment>
+              * translations.xml added
+              * Dependencies are checked
+              * added filetype
 	  </Comment>
       <Name>Aşkın Yollu</Name>
       <Email>askin@askin.ws</Email>
     </Update>
     <Update release="1">
-      <Date>2009-06-20</Date>
-      <Version>0.0.2</Version>
-      <Comment>Firts Release</Comment>
-      <Name>Aşkın Yollu</Name>
-      <Email>askin@askin.ws</Email>
+        <Date>2009-06-20</Date>
+        <Version>0.0.2</Version>
+        <Comment>Firts Release</Comment>
+        <Name>Aşkın Yollu</Name>
+        <Email>askin@askin.ws</Email>
     </Update>
   </History>
 </PISI>
