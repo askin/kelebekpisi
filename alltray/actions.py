@@ -9,11 +9,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-	autotools.configure()
-
+    autotools.configure()
 def bulid():
-	autotools.make()
-
+    autotools.make()
 def install():
-	autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-	pisitools.dodoc("AUTHORS", "INSTALL*", "NEWS", "README*")
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.dodoc("AUTHORS", "INSTALL*", "NEWS", "README*")

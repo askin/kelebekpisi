@@ -2,11 +2,7 @@
 <PISI>
     <Source>
         <Name>alltray</Name>
-		<Summary xml:lang="tr">
-			Alltray programları sistem tepsisine yerleştir!!!.
-		</Summary>
-		<Description xml:lang="tr">
-			Sistem tepsisine yerleşme özelliği olmayan programları sistem tepsisine yerleştirir.
-		</Description>
+        <Summary xml:lang="tr">Alltray programları sistem tepsisine yerleştir!!!</Summary>
+        <Description xml:lang="tr">Sistem tepsisine yerleşme özelliği olmayan programları sistem tepsisine yerleştirir.</Description>
     </Source>
 </PISI>
