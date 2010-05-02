@@ -1,0 +1,76 @@
+diff -Nuar gtodo2-0.19.0-orig/src/interface.c gtodo2-0.19.0/src/interface.c
+--- gtodo2-0.19.0-orig/src/interface.c	2010-04-09 23:11:15.410271352 +0300
++++ gtodo2-0.19.0/src/interface.c	2010-04-09 23:46:01.117275396 +0300
+@@ -13,6 +13,7 @@
+ 
+ /* functions only used in this file */
+ void mw_cat_changed (GtkTreeSelection * selection);
++void toggle_window(GtkStatusIcon *icon, GdkEventButton *event, gpointer user_data);
+ gchar *interface_get_selected_category ();
+ void interface_destroy(void);
+ 
+@@ -99,6 +100,12 @@
+ /* quit the program */
+ int interface_quit ()
+ {
++    printf("toggle window\n");
++    toggle_window(NULL, NULL, NULL);
++}
++
++int interface_quit_tray ()
++{
+     printf("quitting program\n");
+     interface_destroy();
+     gtk_main_quit ();
+@@ -704,6 +711,7 @@
+ 	PangoTabArray *tabs;
+ 	GtkCellRenderer *renderer;
+ 	GtkTreeViewColumn *column;
++        GtkStatusIcon *staticon;
+ 	GValue value = { 0, };
+ 	char *uri;
+ 
+@@ -724,6 +732,15 @@
+ 	gtk_window_set_icon_from_file (GTK_WINDOW
+ 			(glade_xml_get_widget
+ 			 (mw_xml, "main_win")), uri, NULL);
++
++        /**
++         * initialize gtk status icon
++         */
++
++        staticon = gtk_status_icon_new();
++        gtk_status_icon_set_from_file(staticon, uri);
++        gtk_status_icon_set_tooltip_text(staticon, "GTodo");
++
+ 	g_free (uri);
+ 
+ 	/* set up the category tree */
+@@ -780,6 +797,9 @@
+ 			  (glade_xml_get_widget (mw_xml, "cat_tree")))),
+ 			"changed", G_CALLBACK (mw_cat_changed), NULL);
+ 
++	/* connect selection changed signal */
++	g_signal_connect (G_OBJECT (staticon),
++                          "activate", G_CALLBACK (toggle_window), NULL);
+ 
+ 	/* set up the task tree */
+ 	tasks_store = gtk_list_store_new (TASKS_STORE_NUM_FIELDS, G_TYPE_POINTER,	/* TASKS_STORE_GTODO_CLIENT */
+@@ -1283,6 +1303,17 @@
+ }
+ }
+ 
++void toggle_window(GtkStatusIcon *icon, GdkEventButton *event, gpointer user_data) {
++  GtkWindow *window;
++  GtkWidget *widget;
++  gboolean setting;
++  window = GTK_WINDOW (glade_xml_get_widget (mw_xml, "main_win"));
++  widget = GTK_WIDGET (window);
++  setting = gtk_widget_get_visible(widget);
++  gtk_widget_set_visible(widget, !setting);
++  printf("Toogle Window\n");
++}
++
+ GTodoClient *interface_get_selected_client ()
+ {
+ 	GTodoClient *client = NULL;

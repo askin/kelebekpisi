@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>CouchDB</Name>
+        <Homepage>http://code.google.com/p/couchdb-python/</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Python library for working with CouchDB</Summary>
+        <Description>Python library for working with CouchDB.</Description>
+        <Archive type="targz" sha1sum="02968905e537e5114c7d1271ba27927e9297790c">http://pypi.python.org/packages/source/C/CouchDB/CouchDB-0.6.1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>python-couchdb</Name>
+        <RuntimeDependencies>
+            <Dependency>python-simplejson</Dependency>
+            <Dependency>couchdb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/python2.6</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-04-02</Date>
+            <Version>0.6.1</Version>
+            <Comment>Firts Release</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+    </History>
+</PISI>

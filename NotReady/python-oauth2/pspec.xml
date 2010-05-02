@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-oauth2</Name>
+        <Homepage>http://github.com/simplegeo/python-oauth2</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>bla bla</Summary>
+        <Description>bla bla</Description>
+        <Archive type="targz" sha1sum="28749b5d2d5157c6a1ea702b853dc5c7a8c49ac1">http://download.github.com/simplegeo-python-oauth2-1.1.3-0-g9962d31.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>python-oauth2</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/python2.6</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-04-02</Date>
+            <Version>1.1.3</Version>
+            <Comment>Firts Release</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+    </History>
+</PISI>

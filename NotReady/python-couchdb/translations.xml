@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>couchdb-python</Name>
+        <Summary xml:lang="tr">bla bla bla</Summary>
+        <Description xml:lang="tr">bla bla</Description>
+    </Source>
+</PISI>

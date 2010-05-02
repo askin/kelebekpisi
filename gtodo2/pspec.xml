@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gtodo2</Name>
+        <Homepage>http://blog.sarine.nl/category/gtodo/</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Gnome TODO List Manager</Summary>
+        <Description>Gnome Task List Manager is a GTK+ based TODO application.</Description>
+        <Archive type="targz" sha1sum="89c3077f37ed90b0e6521955f3c90b660ba3bc85">http://download.sarine.nl/gtodo2/gtodo2-0.19.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gconf</Dependency>
+            <Dependency>gnome-vfs</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">icon.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gtodo2</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/gtodo2</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gtodo2.desktop">gtodo2.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2009-11-29</Date>
+            <Version>0.19.0</Version>
+            <Comment>Firts Release</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+    </History>
+</PISI>

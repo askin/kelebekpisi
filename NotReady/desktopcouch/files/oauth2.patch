@@ -1,0 +1,21 @@
+diff -Nuar desktopcouch-0.6.4-orig/desktopcouch/records/server_base.py desktopcouch-0.6.4/desktopcouch/records/server_base.py
+--- desktopcouch-0.6.4-orig/desktopcouch/records/server_base.py	2010-04-13 05:53:02.000000000 +0300
++++ desktopcouch-0.6.4/desktopcouch/records/server_base.py	2010-05-01 03:05:44.174927387 +0300
+@@ -36,7 +36,7 @@
+     import json
+ # pylint: enable-msg=F0401
+ 
+-from oauth import oauth
++import oauth2 as oauth
+ 
+ from couchdb import Server
+ from couchdb.client import ResourceNotFound, ResourceConflict, uri as couchdburi
+diff -Nuar desktopcouch-0.6.4-orig/desktopcouch/replication_services/ubuntuone.py desktopcouch-0.6.4/desktopcouch/replication_services/ubuntuone.py
+--- desktopcouch-0.6.4-orig/desktopcouch/replication_services/ubuntuone.py	2010-04-13 05:53:02.000000000 +0300
++++ desktopcouch-0.6.4/desktopcouch/replication_services/ubuntuone.py	2010-05-01 03:05:10.592178011 +0300
+@@ -1,4 +1,4 @@
+-from oauth import oauth
++import oauth2 as oauth
+ import logging
+ import httplib2
+ import gnomekeyring

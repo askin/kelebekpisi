@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>desktopcouch</Name>
+        <Homepage>https://launchpad.net/desktopcouch</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A CouchDB on every desktop, and the code to help it happen.</Summary>
+        <Description>A CouchDB on every desktop, and the code to help it happen.</Description>
+        <Archive type="targz" sha1sum="c5d122a3d4897bc058962238f3b31ef246abdebd">http://launchpad.net/desktopcouch/trunk/0.6.4/+download/desktopcouch-0.6.4.tar.gz</Archive>
+        <Patches>
+            <Patch level="1">oauth2.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>desktopcouch</Name>
+        <RuntimeDependencies>
+            <Dependency>httplib2</Dependency>
+            <Dependency>python-oauth2</Dependency>
+            <Dependency>python-couchdb</Dependency>
+            <Dependency>python-mako</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib/desktopcouch</Path>
+            <Path fileType="library">/usr/lib/python2.6</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/desktopcouch</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/man</Path>
+            <Path fileType="data">/etc/xdg/desktop-couch</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-04-02</Date>
+            <Version>0.6.4</Version>
+            <Comment>Firts Release</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+    </History>
+</PISI>

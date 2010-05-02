@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>apache-couchdb</Name>
+        <Homepage>http://couchdb.apache.org/</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <IsA>library</IsA>
+        <Summary>Apache CouchDB is a document-oriented database</Summary>
+        <Description>Apache CouchDB is a document-oriented database that can be queried and indexed in a MapReduce fashion using JavaScript. CouchDB also offers incremental replication with bi-directional conflict detection and resolution.</Description>
+        <Archive type="targz" sha1sum="b5b84e1d8a082960df09df7e4eda664b5e6c59d7">http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency releaseFrom="9">erlang</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>spidermonkey</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>couchdb</Name>
+        <RuntimeDependencies>
+            <Dependency>spidermonkey</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/usr/etc/couchdb/</Path>
+            <Path fileType="data">/etc/default/</Path>
+            <Path fileType="data">/etc/init.d/</Path>
+            <Path fileType="data">/etc/logrotate.d/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-04-02</Date>
+            <Version>0.11.0</Version>
+            <Comment>Firts Release</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+    </History>
+</PISI>

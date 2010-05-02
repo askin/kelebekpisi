@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gwibber</Name>
+        <Homepage>http://www.gwibber.com/</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Gwibber is an open source microblogging client for Linux</Summary>
+        <Description>Gwibber is an open source microblogging client for Linux. It brings the most popular social networking web services to your desktop and gives you the ability to control how you communicate.</Description>
+        <Archive type="targz" sha1sum="d8d7e0a89195c57984454101716459366c01ebf0">http://launchpad.net/gwibber/2.30/2.30.0/+download/gwibber-2.30.0.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python-distutils-extra</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gwibber</Name>
+        <RuntimeDependencies>
+            <Dependency>pygtk</Dependency>
+            <Dependency>gnome-python-desktop</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/python2.6</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/gwibber</Path>
+            <Path fileType="data">/usr/share/indicators</Path>
+            <Path fileType="data">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-04-02</Date>
+            <Version>2.30.0.1</Version>
+            <Comment>Firts Release</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+    </History>
+</PISI>

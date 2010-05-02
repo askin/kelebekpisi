@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>python-distutils-extra</Name>
+        <Summary xml:lang="tr">python-distutils-extra</Summary>
+        <Description xml:lang="tr">python-distutils-extra</Description>
+    </Source>
+</PISI>

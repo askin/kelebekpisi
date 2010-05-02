@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-distutils-extra</Name>
+        <Homepage>https://launchpad.net/python-distutils-extra</Homepage>
+        <Packager>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Enhancements to Python's distutils</Summary>
+        <Description>Enables you to easily integrate gettext support, themed icons and scrollkeeper based documentation into Python's distutils.</Description>
+        <Archive type="targz" sha1sum="ef3ae72ebcc8a47f24a672f38e6968a72398b1f9">http://launchpad.net/python-distutils-extra/trunk/2.18/+download/dist-python-distutils-extra-2.18.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>python-distutils-extra</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/python2.6/</Path>
+            <Path fileType="data">/usr/share/doc/python-distutils-extra</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2010-04-30</Date>
+            <Version>2.18</Version>
+            <Comment>Firts Release</Comment>
+            <Name>Aşkın Yollu</Name>
+            <Email>askin@askin.ws</Email>
+        </Update>
+    </History>
+</PISI>
