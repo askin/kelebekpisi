@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Gtodo2
+GenericName=Gtodo2
+GenericName[tr]=gtodo
+Comment=Gnome TODO List Manager
+Comment[tr]=Gnome Yapılacak İşler Listesi Yöneticisi
+Exec=gtodo2 %F
+Icon=gtodo
+Terminal=false
+TryExec=gtodo2
+Type=Application
+Catagories=GTK;Utility;

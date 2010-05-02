@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gtodo2</Name>
+        <Summary xml:lang="tr">Gnome yapılacak işler yöneticisi</Summary>
+        <Description xml:lang="tr">GTK+ tabanlı, Gnome için yazılmış yapılacak işler yöneticisi.</Description>
+    </Source>
+</PISI>
